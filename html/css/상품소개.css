@@ -1,0 +1,32 @@
+#container {
+  width: 650px;
+  margin: 0 auto; 
+  text-align: center;
+}
+#check {
+  font-weight: bold;
+  line-height: 1.8;
+  font-size: 1.2rem;
+  border: 1px solid #aaa;
+}
+#topbox {
+  background: #000;
+  text-align: left;
+  color: #fff;
+  font: 0.8em normal;
+  padding: 5px;
+  margin-top: 0;
+}
+img {
+  width: 650px;
+}
+.bluetext {
+  color:blue;
+}
+.redtext {
+  font-size: 0.8em;
+  color: #f00;
+}
+.smalltext {
+  font-size: 0.8em;
+}
