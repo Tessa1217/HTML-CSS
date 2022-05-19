@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+
+body {
+  width: 60%;
+  margin: 0 auto;
+  background-clip: border-box;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+header {
+  background-clip: border-box;
+  background: #333D51;
+  padding: 10px 0px;
+}
+
+.navbar {
+  float: center;
+  text-align: right;
+  margin-right: 10px;
+}
+
+.navbar > li {
+  display: inline-block;
+  padding: 30px;
+}
+
+.navbar > li > a {
+  color: #fff;
+  font-size: 1.2em;
+}
+
+a {
+  text-decoration: none;
+  color: #333D51;
+  font-weight: bold;
+}
+
+#division1 {
+  padding: 10px 15px;
+}
+
+figure {
+  text-align: center;
+}
+
+#navigation {
+  text-align: center;
+}
+
+#navigation > li {
+  display: inline;
+  padding: 30px;
+}     
+
+article {
+  border-radius: 15px;
+  border: 2px dashed #333D51;
+  padding: 10px 15px 10px 0px;
+  margin: 30px;
+}
+
+h4, dl, dt {
+  text-indent: 30px;
+}
+
+section {
+  background: #F4F3EA;
+  padding: 15px 15px;
+}
+
+aside {
+  padding: 15px;
+  background: #D3AC2B;
+}
+
+footer {
+  padding: 30px;
+  background: #333D51;
+  color: #fff;
+  font-style: italic;
+}
+
+#flag {
+  text-align: right;
+}
+
+#doglist {
+  list-style-image: url('/img/발바닥.png');
+  margin-left: 30px;
+}
