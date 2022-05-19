@@ -3,18 +3,16 @@
 body {
   width: 60%;
   margin: 0 auto;
-  background-clip: border-box;
   font-family: 'Source Sans Pro', sans-serif;
 }
 
 header {
-  background-clip: border-box;
   background: #333D51;
-  padding: 10px 0px;
+  height: 100px;
 }
 
 .navbar {
-  float: center;
+  float: right;
   text-align: right;
   margin-right: 10px;
 }
@@ -88,3 +86,82 @@ footer {
   list-style-image: url('/img/발바닥.png');
   margin-left: 30px;
 }
+
+/* 
+body {
+  width: 960px;
+  margin: 0 auto;
+  font-family: '맑은 고딕', 고딕, 굴림;
+}
+
+header {
+  background: color;
+  height: 100px;
+}
+
+nav {
+  width: 600px;
+  float: right;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav a {
+  text-decoration: none;
+  color: color;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+section {
+  padding: 10px;
+}
+
+#flag {
+  text-align: center;
+  margin-right: 5px;
+}
+
+#flag p {
+  text-decoration: none;
+}
+
+#navigation {
+  text-align: center;
+}
+
+#navigation li {
+  display: inline-block; 
+  padding: 10px;
+}
+
+#navigation a {
+  text-decoration: none;
+}
+
+article {
+  padding: 10px;
+  border: 1px solid color;
+  border-radius: 20px;
+}
+
+figure {
+  text-align: center;
+}
+
+aside {
+  padding: 10px;
+  background: color;
+}
+
+footer {
+  padding: 10px;
+  background: color;
+  color: color;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+}
+*/
