@@ -3,38 +3,28 @@
   <head>
       <meta charset = "utf-8">
       <title>애완견 종류</title>
-      <style>
-        .navbar{
-          display: flex;
-          flex-direction: row;
-          width: 100%;
-          list-style: none;
-          margin: 0px;
-          padding: 0px;
-        }
-        .navbar > li{
-          padding: 15px;
-        }
-    </style>
+      <link href = "css/애완견종류.css" rel = "stylesheet">
   </head>
   <body>
     <header>
       <nav>
         <ul class = "navbar">
           <li><a href = "애완견종류.html" target = "_blank">애완견 종류</a></li>
-          <li><a href = "https://korumi.tistory.com/34" target = "_blank">입양하기</a></li>
-          <li><a href = "https://mypetlife.co.kr/series/%ec%89%bd%ea%b2%8c-%ec%95%8c%eb%a0%a4%ec%a3%bc%eb%8a%94-%ea%b0%95%ec%95%84%ec%a7%80-%ec%a7%88%eb%b3%91-%ec%82%ac%ec%a0%84/" target = "_blank">건강돌보기</a></li>
-          <li><a href = "https://mypetlife.co.kr/series/%eb%82%98%eb%8a%94-%eb%b0%98%eb%a0%a4%eb%8f%99%eb%ac%bc%ea%b3%bc-%ec%82%b0%eb%8b%a4/" target = "_blank">더불어살기</a></li>
+          <li><a href = "강아지용품.html" target = "_blank">입양하기</a></li>
+          <li><a href = "건강돌보기.html" target = "_blank">건강돌보기</a></li>
+          <li><a href = "더불어살기.html" target = "_blank">더불어살기</a></li>
         </ul>
       </nav>
     </header>
     <section>
-      <h1 id = "pagetitle">애완견 종류</h1>
-        <ul>
-          <li><a href = "#활달">활달한 강아지</a></li>
-          <li><a href = "#온순">온순한 강아지</a></li>
-          <li><a href = "#사납">사납지만 복종적인 강아지</a></li>
-        </ul>
+      <div id = "division1">
+        <h1 id = "pagetitle">애완견 종류</h1>
+          <ul id = "navigation">
+            <li><a href = "#활달">활달한 강아지</a></li>
+            <li><a href = "#온순">온순한 강아지</a></li>
+            <li><a href = "#사납">사납지만 복종적인 강아지</a></li>
+          </ul>
+      </div>
       <article>
         <h4 id = "활달">활달한 강아지</h4>
         <dl>
@@ -51,15 +41,15 @@
             현재는 실내에서도 많이 길러지고 있다.
           </dd>
         </dl>
-        <figure>
-          <img src = "img/요크셔테리어.jpg" width = 100 height = 100 alt = "요크셔 테리어">
-          <img src = "img/말티즈.jpg" width = 100 height = 100 alt = "말티즈">
-          <img src = "img/포메.jpg" width = 100 height = 100 alt = "포메라이언">
-          <img src = "img/리트리버.jpg" width = 100 height = 100 alt = "골든 리트리버">
-          <figcaption>활달한 강아지</figcaption>
-        </figure>
-        <a href = "#pagetitle"><p>처음으로</p></a>
       </article>
+      <figure>
+        <img src = "img/요크셔테리어.jpg" width = 150 height = 150 alt = "요크셔 테리어">
+        <img src = "img/말티즈.jpg" width = 150 height = 150 alt = "말티즈">
+        <img src = "img/포메.jpg" width = 150 height = 150 alt = "포메라이언">
+        <img src = "img/리트리버.jpg" width = 150 height = 150 alt = "골든 리트리버">
+        <figcaption>활달한 강아지</figcaption>
+      </figure>
+      <a id = "flag" href = "#pagetitle"><p>처음으로</p></a>
       <article>
         <h4 id = "온순">온순한 강아지</h4>
         <dl>
@@ -71,14 +61,14 @@
           <dd>침착하고 영리하여 어린이들을 안심하고 맡길 수 있다. 사람을 즐겁게 해주려는 성질이 있다. 공을 가지고 노는 것을 가장 좋아한다. 현재 맹인 안내견과 마약견으로 사용중이<br>다.
           온순한 강아지를 좋아하는 분에게는 적합한 견종이다.</dd>
         </dl>
-        <figure>
-          <img src = "img/쉬즈.jpg" width = 100 height = 100 alt = "쉬즈">
-          <img src = "img/퍼그.jpg" width = 100 height = 100 alt = "퍼그">
-          <img src = "img/래브라도.jpg" width = 100 height = 100 alt = "래브라도 리트리버">
-          <figcaption>온순한 강아지</figcaption>
-        </figure>
-        <a href = "#pagetitle"><p>처음으로</p></a>
       </article>
+      <figure>
+        <img src = "img/쉬즈.jpg" width = 150 height = 150 alt = "쉬즈">
+        <img src = "img/퍼그.jpg" width = 150 height = 150 alt = "퍼그">
+        <img src = "img/래브라도.jpg" width = 150 height = 150 alt = "래브라도 리트리버">
+        <figcaption>온순한 강아지</figcaption>
+      </figure>
+      <a id = "flag" href = "#pagetitle"><p>처음으로</p></a>
       <article>
         <h4 id = "사납">사납지만 복종적인 강아지</h4>
         <dl>
@@ -90,17 +80,18 @@
           <dd>가정에서 키우기에 적합한 품종이다. 보호본능이 강하고 정이 많다. 하지만 사냥을 하던 본능이 조금은 남아있어 사나운 면이 있다. 이종을 좋은 품종으로 기르기 위해서는<br>
           어릴 대부터 엄한 훈련이 필요하기도 하다.</dd>
         </dl>
-        <figure>
-          <img src = "img/미니어쳐핀셔.jpg" width = 100 height = 100 alt = "미니어쳐 핀셔">
-          <img src = "img/푸들.jpg" width = 100 height = 100 alt = "푸들">
-          <img src = "img/폭스테리어.jpg" width = 100 height = 100 alt = "폭스테리어">
-        </figure>
-        <a href = "#pagetitle"><p>처음으로</p></a>
       </article>
+      <figure>
+        <img src = "img/미니어쳐핀셔.jpg" width = 150 height = 150 alt = "미니어쳐 핀셔">
+        <img src = "img/푸들.jpg" width = 150 height = 150 alt = "푸들">
+        <img src = "img/폭스테리어.jpg" width = 150 height = 150 alt = "폭스테리어">
+        <figcaption>사납지만 복종적인 강아지</figcaption>
+      </figure>
+      <a id = "flag" href = "#pagetitle"><p>처음으로</p></a>
     </section>
     <aside>
       <h4>건강한 강아지는</h4>
-      <ul>
+      <ul id = "doglist">
         <li>코가 젖어있고 눈꼽이 없어야 합니다.</li>
         <li>털에 윤기가 있는 것을 골라야 합니다.</li>
         <li>입에서 고약한 냄새가 나면 병이 있다는 증거입니다.</li>
