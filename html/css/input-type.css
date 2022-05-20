@@ -1,0 +1,56 @@
+/* 전체 넓이, 마진 */
+#container {
+  width: 60%;
+  margin: 20px auto;
+}
+
+/* 폼 양식 */
+fieldset {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+legend {
+  font-weight: bold; 
+}
+
+li {
+  list-style: none;
+  padding: 5px;
+}
+
+#linear {
+  margin: 0px;
+  padding: 0px;
+}
+
+#linear li {
+  padding: 1px;
+  display: inline-block;
+}
+
+.align {
+  width: 150px;
+  float: left;
+}
+
+button {
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+
+/* 필수 항목 * 표시, 부가 설명 표시*/
+.redstar {
+  color: red;
+}
+
+.small {
+  font-size: small;
+}
+
+/* 버튼 */
+#button {
+  text-align: center;
+}
+
