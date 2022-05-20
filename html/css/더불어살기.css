@@ -62,3 +62,24 @@ footer {
   text-align: center;
   font-style: italic;
 }
+
+/*
+Class CSS Layout
+
+첫번째 article 속에 이미지 넣고 
+이미지만 float right 시킴
+
+section {
+  padding: 10px;
+}
+
+article img {
+  float: right;
+}
+
+footer {
+  clear: both;
+  padding: 20px;
+}
+
+*/
