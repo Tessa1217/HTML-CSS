@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #container {
+      width: 60%;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-size: 35px;
+      text-align: center;
+    }
+
+    fieldset {
+      margin-bottom: 20px;
+      border: 2px dotted #000;
+    }
+
+    fieldset legend {
+      font-size: 20px;
+      font-weight: bold;
+      color: tomato;
+    }
+
+    fieldset ul {
+      list-style: none;
+    }
+
+    fieldset li {
+      padding: 6px;
+    }
+
+    input#address {
+      width: 300px;
+    }
+
+    .align {
+      width: 90px;
+      float: left;
+      font-weight: bold;
+      font-size: 17px;
+    }
+
+    #button {
+      text-align: center;
+    }
+
+    #button button {
+      border: none;
+      border-radius: 10px;
+      background: rgba(255, 99, 71, 0.5);
+      padding: 15px 15px;
+      font-weight: bold;
+    }
+
+    #button button:hover {
+      background: tomato;
+    }
+
+  </style>
+</head>
+<body>
+  <div id = "container">
+    <header>
+      <h1>상품 주문서</h1>
+    </header>
+    <form action = "abc.jsp" method = "post">
+      <fieldset>
+        <legend>개인 정보</legend>
+        <ul>
+          <li><label for = "user_name" class = "align">이름</label>
+          <input type = "text" id = "user_name" autofocus required placeholder = "여백없이 입력"></li>
+          <li><label for = "user_tel" class = "align">연락처</label>
+          <input type = "tel" id = "user_tel" required placeholder = "연락가능한 번호"></li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>배송지 정보</legend>
+        <ul>
+          <li><label for = "address" class = "align">주소</label>
+          <input type = "text" id = "address" required></li>
+          <li><label for = "tel" class = "align">전화번호</label>
+          <input type = "tel" id = "tel" required></li>
+          <li><label for = "memo" class = "align">메모</label>
+            <textarea cols = "43" rows = "3" id = "memo"></textarea>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>주문 정보</legend>
+        <ul>
+          <li><label><input type = "checkbox">경북성주 참외(5KG)</label>
+          <label><input type = "number" min = "0" max = "15" step = "1" value = "0">Box</label></li>
+          <li><label><input type = "checkbox">경북영천 포도(5KG)</label>
+          <label><input type = "number" min = "0" max = "15" step = "1" value = "0">Box</label></li>
+          <li><label><input type = "checkbox">경북봉화 수박(5KG)</label>
+          <label><input type = "number" min = "0" max = "15" step = "1" value = "0">Box</label></li>
+        </ul>
+      </fieldset>
+      <div id = "button">
+        <button type = "submit">주문하기</button>
+        <button type = "reset">다시 작성</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
