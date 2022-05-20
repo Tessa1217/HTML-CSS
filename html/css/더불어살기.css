@@ -41,6 +41,14 @@ article ul, ol {
   margin-bottom: 40px;
 }
 
+article ul {
+  list-style: square;
+}
+
+article ol {
+  list-style: upper-roman;
+}
+
 aside {
   margin: 40px 10px 20px 0px;
   width: 210px;
