@@ -1,0 +1,55 @@
+/* 가로, 마진 적용 */
+#container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+/* 폼의 가로 크기 적용 */
+form {
+  width: 80%;
+}
+
+/* 제목 중앙 정렬 */
+h1 {
+  text-align: center;
+}
+
+/* 필드셋 */
+fieldset {
+  padding: 1%;
+  margin-bottom: 2%;
+}
+
+fieldset li {
+  list-style: none;
+  padding: 0.2%;
+}
+
+fieldset label {
+  width: 10%;
+  float: left;
+  font-weight: bold;
+}
+
+/* 위에 항목들 스페이싱*/
+.space {
+  width: 17%;
+}
+
+fieldset input {
+  height: 2.5%;
+}
+
+legend {
+  font-weight: bold;
+  color: firebrick;
+}
+
+input#basic {
+  text-align: center;
+}
+
+/* 버튼 중앙 정렬 */
+#buttons {
+  text-align: center;
+}

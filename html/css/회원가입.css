@@ -1,0 +1,119 @@
+/* total width, margin */
+#container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+/* header */
+header {
+  text-align: center;
+}
+
+/* nav bar */
+nav {
+  width: 100%;
+  height: 50px;
+  background: #000;
+}
+
+nav ul {
+  padding: 15px;
+}
+
+nav li {
+  list-style: none;
+  color: #fff;
+  float: left;
+  padding: 0px 10px;
+}
+
+nav #login {
+  float: right;
+}
+
+/* aside */
+
+aside {
+  box-sizing: border-box;
+  width: 20%;
+  height: 657.483px;
+  float: left;
+  background: lightgrey;
+  text-align: center;
+}
+
+/* section */
+section {
+  box-sizing: border-box;
+  width: 60%;
+  float: left;
+  padding: 30px;
+}
+
+h1 {
+  margin-top: 0;
+  text-align: center;
+}
+
+form {
+  padding: 10px 10px 50px 10px;
+  background: #eee;
+}
+
+fieldset {
+  text-align: center;
+  border: none;
+  padding: 0px;
+  margin-bottom: 10px;
+}
+
+fieldset legend {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+fieldset ul {
+  text-align: center;
+  padding-left: 14px;
+}
+
+fieldset li {
+  width: 480px;
+  list-style: none;
+  background: rgba(141, 130, 130, 0.3);
+  border-radius: 5px;
+  padding: 5px 0px;
+  margin: 5px;
+}
+
+fieldset label {
+  width: 130px;
+  float: left;
+  text-align: center;
+  padding: 4px;
+}
+
+fieldset input {
+  width: 250px;
+  height: 25px;
+}
+
+button {
+  padding: 15px 20px;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  font-size: 20px;
+  background: rgba(141, 130, 130, 0.3);
+  
+}
+
+footer {
+  clear: both;
+  text-align: center;
+  padding: 30px;
+  background: grey;
+
+}
