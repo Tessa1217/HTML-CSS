@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            border: 1px solid;
+        }
+        #info {
+            height: 150px;
+            border: 1px solid;
+            padding: 0;
+        }
+        img {
+            float: left;
+            width: 16%;
+            height: 130px;
+            margin: 5px;
+        }
+        .infotable {
+            width: 80%;
+            height: 130px;
+            margin: 5px;
+            float: right;
+            text-align: center;
+            border: 1px solid #000;
+            border-collapse: collapse;
+        }
+        .tablename {
+            border: 1px solid #000;
+            width: 20%;
+        }
+        .space {
+            border: 1px solid #000;
+        }
+        article {
+            box-sizing: border-box;
+            width: 50%;
+            height: 200px;
+            padding: 10px;
+            float: left;
+            border: 1px solid;
+        }
+        #skillsec {
+            width: 100%;
+            border: 1px solid #000;
+        }
+
+        #skillsec > h3 {
+            float: left;
+            margin-right: 20px;
+        }
+        #slist > li {
+            display: inline;
+            float: left;
+            padding: 0px 40px;
+        }
+        figure > img {
+            display: inline;
+            width: 120px;
+            padding: 0px;
+            margin-left: 25px;
+        }
+        #lang {
+            border: 1px solid;
+            border-collapse: collapse;
+            text-align: center;
+            width: 100%;
+        }
+        th {
+            border: 1px solid;
+        }
+        td {
+            border: 1px solid;
+        }
+        #contact {
+            border: 1px solid;
+            height: 100px;
+        }
+        #contact > li {
+            padding: 5px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id = "container">
+        <header>
+            <h1>Application</h1>
+        </header>
+            <div id = "info">
+            <img src = "#" alt = "picture">
+            <table class = "infotable">
+                <tr>
+                    <th class = "tablename">이름</th>
+                    <td class = "space"></td>
+                    <th class = "tablename">Name</th>
+                    <td class = "space"></td>
+                </tr>
+                <tr>
+                    <th class = "tablename">주소</th>
+                    <td colspan = "3"></td>
+                </tr>
+                <tr>
+                    <th class = "tablename">핸드폰</th>
+                    <td class = "space"></td>
+                    <th class = "tablename">집 전화</th>
+                    <td class = "space"></td>
+                </tr>
+            </table>     
+        </div>
+        <section>
+            <article>
+                <h3>Education</h3>
+                <ul>
+                    <li>Middle School</li>
+                    <li>High School</li>
+                    <li>University</li>
+                </ul>
+            </article>
+            <article>
+                <h3>Career</h3>
+                <ul>
+                    <li>XX Company developer</li>
+                    <li>AA Company developer</li>
+                    <li>BB Company developer</li>
+                </ul>
+            </article>
+            <article id = "skillsec">
+                <h3>Skill</h3>
+                <ul id = "slist">
+                    <li>Front-End Skill</li>
+                    <li>Back-End Skill</li>
+                    <li>Extra Skill</li>
+                </ul>
+                <figure>
+                    <img src = "#">
+                    <img src = "#">
+                    <img src = "#">
+                </figure>
+            </article>
+            <article>
+                <h3>Language</h3>
+                <table id = "lang">
+                    <tr>
+                        <th>언어명</th>
+                        <th>시험 이름</th>
+                        <th>점수/급수</th>
+                    </tr>
+                    <tr>
+                        <td>ENGLISH</td>
+                        <td>TOEIC</td>
+                        <td>950</td>
+                    </tr>
+                    <tr>
+                        <td>ENGLISH</td>
+                        <td>OPIC</td>
+                        <td>AL</td>
+                    </tr>
+                    <tr>
+                        <td>CHINESE</td>
+                        <td>HSK</td>
+                        <td>4급</td>
+                    </tr>
+                </table>
+            </article>
+            <article>
+                <h3>Contact me</h3>
+                <ul id = "contact">
+                    <li>Naver</li>
+                    <li>Instagram</li>
+                    <li>Github</li>
+                </ul>
+            </article>
+        </section>
+    </div>  
+</body>
+</html>
