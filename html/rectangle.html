@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div {
+      float: left;
+      width: 200px;
+      height: 200px;
+      margin: 10px;
+      color: #fff;
+    }
+
+    #rectangle {
+      background: green;
+      margin: 10px;
+    }
+
+    #rectangle:hover {
+      animation-name: color;
+      animation-duration: 2s;
+    }
+
+    @keyframes color {
+      to {
+        background: yellow;
+      }
+    }
+
+    #rectangle2 {
+      background: blue;
+    }
+
+    #rectangle2:hover {
+      background: purple;
+      transition: 2s;
+    }
+
+    #rectangle3 {
+      background: black;
+    }
+
+    #rectangle3:hover {
+      background: #fff;
+      color: #000;
+      border-radius: 100%;
+      transition: 3s;
+    }
+
+    #rectangle4 {
+      background: aquamarine;
+      transition: 2s ease-in;
+    }
+
+    #rectangle4:hover {
+      transform: rotate(360deg);
+    }
+
+    #rectangle5 {
+      width: 100px;
+      height: 50px;
+      background: tomato;
+    }
+
+    #rectangle5:hover {
+      transition: 3s;
+      height: 300px;
+    }
+
+  </style>
+</head>
+<body>
+  <div id = "rectangle">Animation</div>
+  <div id = "rectangle2">Transition</div>
+  <div id = "rectangle3">Shape</div>
+  <div id = "rectangle4">Rotate</div>
+  <div id = "rectangle5">Drop</div>
+</body>
+</html>
