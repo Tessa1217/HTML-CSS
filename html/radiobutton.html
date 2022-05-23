@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      width: 70%;
+      margin: 0 auto;
+    }
+
+    input:disabled {
+      background: #ddd;
+    }
+
+    table {
+      position: relative;
+      left: 25%;
+      width: 50%;
+      text-align: center;
+      border: 1px solid;
+      border-collapse: collapse; 
+    }
+
+    caption {
+      font-weight: bold;
+    }
+
+    th, td {
+      border: 1px solid;
+    }
+
+    tr:nth-child(odd) {
+      background: beige;
+    }
+
+    p {
+      text-align: center;
+    }
+
+    ul {
+      padding: 0px;
+      list-style: none;
+      text-align: center;
+    }
+
+    input:checked + span {
+      font-weight: bold;
+      padding: 1px;
+      background: #eee;
+    }
+
+  </style>
+</head>
+<body>
+  <form action = "abc.jsp" method = "post">
+    <fieldset>
+      <legend>사용자 정보</legend>
+      <ul>
+        <li><label id = "name">이름</label>
+        <input type = "text" id = "name" disabled></li>
+      </ul>
+    </fieldset>
+    <table>
+        <caption>이달의 과목</caption>
+        <tr>
+          <th>과목</th>
+        </tr>
+        <tr>
+          <td>국어</td>
+        </tr>
+        <tr>
+          <td>사회</td>
+        </tr>
+        <tr>
+          <td>수학</td>
+        </tr>
+        <tr>
+          <td>영어</td>
+        </tr>
+    </table>
+    <fieldset>
+      <legend>신청 과목</legend>
+      <p>이 달에 신청할 과목을 선택하세요.</p>
+      <ul>
+        <li><input type = "radio" name = "sub" checked><span>국어</span>
+        <input type = "radio" name = "sub"><span>사회</span>
+        <input type = "radio" name = "sub"><span>수학</span>
+        <input type = "radio" name = "sub"><span>영어</span></li>
+      </ul>
+    </fieldset>
+  </form>
+</body>
+</html>
