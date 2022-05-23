@@ -1,12 +1,18 @@
+/* 컨테이너 넓이, 마진 지정 */
 #container {
   width: 960px;
   margin: 0 auto;
 }
+
+/* 헤더 */
 header {
   background: #333D51;
   height: 100px;
   padding: 20px;
 }
+
+/* 네비게이션 바 */
+
 .navbar {
   text-align: right;
 }
@@ -14,13 +20,37 @@ header {
   display: inline-block;
   padding: 20px;
 }
-.navbar > li > a {
-  font-size: 1.2em;
-  padding: 20px;
+
+/* 가상 클래스 */
+.navbar a {
+  padding: 5px;
+}
+
+.navbar a:link {
   font-weight: bold;
   text-decoration: none;
   color: #fff;
 }
+
+.navbar a:visited {
+  font-weight: bold;
+  text-decoration: none;
+  color: #eee;
+}
+
+.navbar a:hover {
+  border-bottom: 3px dotted #fff;
+}
+
+.navbar a:active {
+  border: 5px dashed #fff;
+}
+
+.navbar a:focus {
+  background: #000;
+}
+
+/* 섹션 */
 section {
   box-sizing: border-box;
   width: 70%;
@@ -29,28 +59,82 @@ section {
 }
 
 section h1 {
+  position: relative;
   height: 50px;
   margin-bottom: 5px;
   padding-left: 20px;
 }
+
+section h1::before {
+  position: relative;
+  top: 5px;
+  right: 5px;
+  content:url(/img/임티.png);
+  margin-right: 5px;
+}
+
+section h1::after {
+  position: relative;
+  top: -5px;
+  left: 5px;
+  content: "NEW!";
+  font-size: small;
+  color: #fff;
+  background: red;
+  padding: 3px;
+  border-radius: 5px;
+}
+
+/* 아티클 */
 article {
   box-sizing: border-box;
-  width: 325px;
-  height: 300px;
+  width: 320px;
+  height: 330px;
   padding: 15px;
-}
-#a1 {
+  margin: 3px;
   float: left;
 }
-#a2 {
+
+/* 아티클 형제 중 첫번째 요소의 h3 뒤에 new라는 문구 넣기 */
+
+article:first-of-type h3::after {
+  content: "NEW!";
+  font-size: small;
+  color: #fff;
+  padding: 3px;
+  border-radius: 5px;
+  background: red;
   float: right;
 }
-#a3 {
-  float: left;
+
+/* 아티클 위에 마우스 올리면 색상 변경 */
+article:nth-child(odd):hover {
+  color: #fff;
+  background: #D3AC2B;
 }
-#a4 {
-  float: right;
+
+article:nth-child(even):hover {
+  color: #fff;
+  background: #333D51;
 }
+
+/* 아티클 paragraph 첫 글자만 볼드체 */
+article p::first-letter {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* 드래그 시 아티클 색상 달리 줌 */
+article:nth-child(odd) p::selection {
+  color:#fff;
+  background: #333D51;
+}
+
+article:nth-child(even) p::selection {
+  color: #fff;
+  background: #D3AC2B;
+}
+
 aside {
   margin-top: 70px;
   float: right;
