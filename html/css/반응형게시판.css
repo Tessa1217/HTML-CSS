@@ -1,0 +1,106 @@
+body {
+  background: #eee;
+  margin: 0 auto;
+}
+
+#container {
+  width: 96%;
+  padding: 2%;
+}
+
+header {
+  width: 100%;
+  height: 10%;
+  text-align: center;
+  background: #fff;
+  padding-top: 1%;
+}
+
+nav {
+  background: grey;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+nav ul {
+  overflow: hidden;
+}
+
+nav ul li {
+  float: left;
+  padding: 1.5% 3%;
+  line-height: 100%;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.right {
+  float: right;
+}
+
+.card {
+  box-sizing: border-box;
+  padding: 2%;
+  background: #fff;
+  margin: 10px 0px;
+}
+
+section {
+  width: 74%;
+  float: left;
+}
+
+table {
+  padding: 2%;
+  width: 100%;
+  border: 1px solid #eee;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #eee;
+  text-align: left;
+  padding: 1%;
+}
+
+td button {
+  float: left;
+  margin: 0.2%;
+}
+
+td input, textarea {
+  margin: 1%;
+  padding: 0.7%;
+  width: 96%;
+}
+
+.asidelist {
+  width: 24%;
+  float: right;
+}
+
+aside ul {
+  background: #eee;
+}
+
+aside li {
+  padding: 5%;
+}
+
+#lastcard {
+  margin-bottom: 0;
+}
+
+footer {
+  clear: both;
+  height: 10%;
+  padding: 1%;
+  background: grey;
+  text-align: center;
+}
